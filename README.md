@@ -1,52 +1,63 @@
-# YouTube RAG Assistant
+# vocAItion
 
-This project is an assistant that uses RAG (Retrieval-Augmented Generation) to answer questions based on the content of YouTube videos.  
-It downloads the video, extracts the audio, transcribes it using Faster Whisper, and uses the OpenAI API to answer questions.
+**vocAItion** is a proof-of-concept (PoC) for an AI-powered resume enhancement assistant. It helps users rewrite and improve their previous job descriptions using OpenAI's API, through an interactive command-line flow.
 
-## Features
+## 🚀 Features
 
-- Download YouTube videos  
-- Extract and transcribe audio with Faster Whisper  
-- Query the OpenAI API to answer questions  
-- Modular and organized structure following PEP-8
+- Load resumes in `.txt` or `.pdf` format
+- Automatically extract professional experiences using GPT
+- Let the user select one experience to improve
+- Generate tailored questions to refine the selected experience
+- Rewrite the experience based on the user’s answers
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-yt_sage/
-├── run.py                   # Main script to run the assistant
-├── yt_sage/
-│   ├── __init__.py          # Package initializer
-│   ├── cli.py               # Command line interface
-│   ├── downloader.py        # Functions for downloading and extracting audio
-│   ├── transcriber.py       # Functions for audio transcription
-│   ├── openai_client.py     # Client for OpenAI interaction
-│   └── utils.py             # General utility functions
-├── tests/                   # Unit tests
-│   ├── __init__.py
-│   ├── test_downloader.py
-│   ├── test_transcriber.py
-│   ├── test_openai_client.py
-│   └── test_utils.py
-├── .env                    # Environment variables file (do not upload to Git)
-├── .gitignore              # Git ignore file
-└── README.md               # Project documentation
+vocAItion/
+├── app/
+│   ├── main.py                   # Main entrypoint for the CLI POC
+│   ├── sections/
+│   │   └── experience.py         # Experience processing logic (extract, improve)
+│   ├── utils/
+│   │   ├── file_loader.py        # Handles loading PDF or TXT files
+│   │   ├── openai_client.py      # Wrapper around OpenAI API
+│   │   └── prompts.py            # Loads prompt templates
+├── prompts/
+│   ├── experience_extract_prompt.txt
+│   ├── experience_questions_prompt.txt
+│   └── experience_improve_prompt.txt
+├── data/                         # Folder for uploading resumes (.pdf/.txt)
+│   └── sample_resume.pdf
+├── .env                          # API key for OpenAI
+├── .gitignore
+├── requirements.txt
+└── README.md
 ```
 
-## How to Use
+## 🛠️ Setup & Usage
 
-1. Clone the repository  
-2. Set your OpenAI API key in the `.env` file as `OPENAI_API_KEY=your_api_key`  
-3. Install dependencies: `pip install -r requirements.txt`  
-4. Run the main script: `python run.py`  
-5. Paste the YouTube video link and ask questions about the transcribed content
+### 1. Install dependencies
 
-## Notes
+```bash
+pip install -r requirements.txt
+```
 
-- Do not upload the `.env` file with your key to the public repository  
-- You can create tests for each module in the `tests` folder to ensure code quality  
-- The project is structured to facilitate maintenance and future expansion
+### 2. Add your OpenAI API key
 
----
+Create a `.env` file in the root with:
+
+```
+OPENAI_API_KEY=your-api-key-here
+```
+
+### 3. Add a resume
+
+Place your `.pdf` or `.txt` resume in the `data/` folder.
+
+### 4. Run the app
+
+```bash
+python -m app.main
+```
 
 Project created by Nicholas Tadeu.
