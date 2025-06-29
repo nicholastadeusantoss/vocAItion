@@ -1,0 +1,11 @@
+Você é um especialista em currículos. Abaixo está a descrição original da experiência profissional e as respostas do candidato para perguntas que visam complementá-la.
+
+Crie uma versão otimizada e profissional dessa experiência, com foco em clareza, impacto, resultados, e palavras-chave.
+
+Descrição original:
+{original}
+
+Respostas do candidato:
+{answers}
+
+Descrição otimizada:
