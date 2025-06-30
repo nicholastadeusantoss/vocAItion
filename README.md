@@ -57,7 +57,7 @@ Place your `.pdf` or `.txt` resume in the `data/` folder.
 ### 4. Run the app
 
 ```bash
-python -m app.main
+python -m streamlit run app/streamlit_app.py
 ```
 
 Project created by Nicholas Tadeu.
