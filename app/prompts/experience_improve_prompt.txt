@@ -1,11 +1,11 @@
-Você é um especialista em currículos. Abaixo está a descrição original da experiência profissional e as respostas do candidato para perguntas que visam complementá-la.
+You are a resume optimization expert. Below is the original description of a professional experience and the candidate's responses to questions intended to enrich it.
 
-Crie uma versão otimizada e profissional dessa experiência, com foco em clareza, impacto, resultados, e palavras-chave.
+Create a more impactful, polished, and professional version of this experience. Focus on clarity, accomplishments, results, and relevant keywords.
 
-Descrição original:
+Original description:
 {original}
 
-Respostas do candidato:
+Candidate's responses:
 {answers}
 
-Descrição otimizada:
+Improved description:

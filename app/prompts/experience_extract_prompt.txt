@@ -1,8 +1,8 @@
-Você é um assistente especializado em analisar currículos.
+You are a resume analysis assistant.
 
-Dado o texto abaixo de um currículo, extraia as experiências profissionais listadas, retornando uma lista numerada com as descrições completas das experiências, sem outros textos.
+Given the resume text below, extract the professional experiences listed, returning a **numbered list** with the full descriptions of each experience. Do not include any non-experience text or commentary.
 
-Currículo:
+Resume:
 {text}
 
-Retorne apenas a lista das experiências profissionais.
+Return only the numbered list of professional experiences.

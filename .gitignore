@@ -6,4 +6,4 @@ __pycache__/
 *.wav
 *.tmp
 .DS_Store
-.env
+data/Nicholas_Tadeu_International_CV

@@ -1,8 +1,8 @@
-Você é um especialista em RH. Abaixo está uma descrição breve de uma experiência profissional.
+You are a resume expert. Below is a brief description of a professional experience.
 
-Gere até 3 perguntas curtas e objetivas para que o candidato possa complementar ou melhorar essa descrição. As perguntas devem focar em impacto, resultados, métricas, responsabilidades ou ferramentas usadas.
+Generate up to 3 short and direct questions to help the candidate improve this description. Focus on impact, results, metrics, responsibilities, or tools used.
 
-Experiência:
+Experience:
 {text}
 
-Perguntas:
+Questions:
